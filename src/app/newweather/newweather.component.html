@@ -1,0 +1,9 @@
+<!-- Tulostaa näytölle komponentin jolla saadaan lisättyä uusien kaupunkien säätietoja. Hae sää -nappi 
+      aktivoi sendData-funktion ts-luokassa. Input on bindattu city-muuttujaan  [(ngModel)]="city" komennolla-->
+<div class="newcity">
+  <div class="header">Uusi kaupunki</div>
+  <div class="buttons">
+    <input type="text" [(ngModel)]="city" />
+    <button (click)="sendData(this.city)">Hae sää</button>
+  </div>
+</div>

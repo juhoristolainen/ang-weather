@@ -1,0 +1,52 @@
+.newcity {
+  width: 15em;
+  height: 30em;
+  border-radius: 25px;
+  box-shadow: 1px 1px 15px #00011a;
+
+  background: rgb(1, 5, 122);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 5, 122, 1) 0%,
+    rgba(1, 5, 122, 1) 0%,
+    rgba(112, 27, 134, 1) 100%
+  );
+
+  color: #ffffff;
+  /* display: block;
+  text-align: center; */
+}
+
+input {
+  font-size: 2em;
+  height: 1.5em;
+  width: 6em;
+  border-radius: 15px;
+  border: none;
+}
+
+.buttons {
+  margin-top: 3em;
+}
+
+button {
+  font-size: 1em;
+  width: 12em;
+  height: 2em;
+  font-weight: 700;
+  border-radius: 15px;
+  border: none;
+  margin-top: 0.5em;
+  cursor: pointer;
+  background-color: rgb(229, 165, 245);
+  color: #2c2c2c;
+}
+
+button:hover {
+  background-color: rgb(209, 75, 243);
+}
+
+.header {
+  padding: 1em;
+  font-size: 2em;
+}

@@ -1,0 +1,70 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  min-width: 30em;
+  min-height: 22em;
+  background-color: rgb(219, 219, 219);
+  border-radius: 15px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(179, 151, 243, 1) 0%,
+    rgba(108, 83, 174, 1) 60%,
+    rgba(46, 29, 101, 1) 100%
+  );
+
+  color: rgb(0, 0, 0);
+}
+
+input {
+  font-size: 1.5em;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 0.5em;
+}
+
+.kirjaudu {
+  font-size: 1em;
+  width: 12em;
+  height: 2em;
+  font-weight: 700;
+  border-radius: 0 15px 15px 0;
+  border: none;
+  margin-top: 0.5em;
+  cursor: pointer;
+  background-color: rgb(223, 127, 247);
+  color: #2c2c2c;
+  margin-bottom: 0.5em;
+}
+
+.kirjaudu:hover {
+  background-color: rgb(215, 85, 248);
+}
+
+.peruuta {
+  font-size: 1em;
+  width: 12em;
+  height: 2em;
+  font-weight: 700;
+  border-radius: 15px 0 0 15px;
+  border: none;
+  margin-top: 0.5em;
+  cursor: pointer;
+  background-color: rgb(212, 212, 212);
+  color: #2c2c2c;
+  margin-bottom: 0.5em;
+}
+
+.peruuta:hover {
+  background-color: rgb(182, 182, 182);
+}

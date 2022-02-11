@@ -1,0 +1,35 @@
+<header>
+  <span class="appname">Sää</span>
+  <span class="day">Tänään</span>
+  <div>
+    <div *ngIf="!loggedIn">
+      <span class="login"
+        >Kirjaudu
+        <div class="creds">
+          <div>
+            <label for="ktun">Käyttäjätunnus:</label>
+          </div>
+          <input type="text" name="username" id="ktun" [(ngModel)]="username" />
+          <div>
+            <label for="pass">Salasana:</label>
+          </div>
+          <input type="password" name="" id="pass" [(ngModel)]="password" />
+          <div>
+            <button (click)="login(this.username, this.password)">
+              Kirjaudu
+            </button>
+          </div>
+          <a routerLink="rekisteroidy">Ei vielä käyttäjää?</a>
+        </div>
+      </span>
+    </div>
+    <div *ngIf="loggedIn">
+      <span (click)="logout()" class="logout">Kirjaudu ulos</span>
+    </div>
+  </div>
+</header>
+<div class="cities">
+  <app-weatherlist></app-weatherlist>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<!--Tällä sivulla näytetään kaikkien haluttujen kaupunkien säät. *ngFor käy läpi kaikki homepage Servicen cities -taulukossa olevat
+    tiedot ja laittaa aina jokaisen kohdan sisällön city-muuttujaan. Joka kerta kun uusi cityweather-komponentti luodaan
+    niin cityweather-komponentin city-muuttujaksi annetaan arvo kulloinkin käsittelyssä olevan solun mukaan.
+    cityweather-komponentti vastaanottaa arvon @Input:n avulla.
+  
+    Alempana newweather-komponentin luonnissa otetaan vastaan newweather-komponentissa luotu eventti, joka aktivoi
+    weatherlist-komponentin newWeather-funktion ja antaa tälle parametriksi eventtinä annetun kaupungin nimen-->
+
+<div class="page">
+  <div class="cities" *ngFor="let city of this.hpService.cities">
+    <app-cityweather [city]="city"></app-cityweather>
+  </div>
+  <app-newweather (getWeather)="getWeather($event)"></app-newweather>
+</div>
