@@ -1,4 +1,4 @@
-# SääSovellus
+# Sää sovellus
 
 Hakee halutun kaupungin säätiedot. Jos käyttäjä kirjautuu sisään,
 niin haetaan käyttäjän itselleen tallentamat kaupungit ns.
@@ -11,3 +11,5 @@ Salasana: Asd
 Sovellusta tehdessä olen oppinut paljon sovellusarkkitehtuurista.
 Samoin tiedonvälittäminen komponentista toiseen alkaa sujua hieman
 paremmin.
+
+Sovellusta voit testata täällä: https://weather-alpha-eight.vercel.app/
